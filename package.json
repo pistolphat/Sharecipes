@@ -1,0 +1,27 @@
+{
+  "name": "Project_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pistolphat/Love-2-Cook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pistolphat/Love-2-Cook/issues"
+  },
+  "homepage": "https://github.com/pistolphat/Love-2-Cook#readme"
+}
