@@ -1,22 +1,22 @@
 [
   {
-    "Title": "Boiled Eggs",
-    "Ingredients": "Eggs, Salt, Water",
+    "title": "Boiled Eggs",
+    "ingredients": "Eggs, Salt, Water",
     "Instructions": "1. Boil water 2) Put eggs in boiling pot."
   },
   {
-    "Title": "Boiled Eggs",
-    "Ingredients": "Eggs, Salt, Water",
-    "Instructions": "1. Boil water 2) Put eggs in boiling pot."
+    "title": "Boiled Eggs",
+    "ingredients": "Eggs, Salt, Water",
+    "instructions": "1. Boil water 2) Put eggs in boiling pot."
   },
   {
-    "Title": "Boiled Eggs",
-    "Ingredients": "Eggs, Salt, Water",
-    "Instructions": "1. Boil water 2) Put eggs in boiling pot."
+    "title": "Boiled Eggs",
+    "ingredients": "Eggs, Salt, Water",
+    "instructions": "1. Boil water 2) Put eggs in boiling pot."
   },
   {
-    "Title": "Tough Corn",
-    "Ingredients": "Corn, Salt",
-    "Instructions": "1. Put corn into boiled water"
+    "title": "Tough Corn",
+    "ingredients": "Corn, Salt",
+    "instructions": "1. Put corn into boiled water"
   }
 ]

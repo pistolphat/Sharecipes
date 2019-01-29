@@ -4,8 +4,8 @@ const Recipe = require("../models/Recipes");
 
 // GET - homepage displaying all recipes
 router.get("/", (req, res) => {
-  Recipes.find({}).then(result => {
-    res.render("recipes/recipes", { recipes });
+  Recipe.find({}).then(recipe => {
+    res.render("index", { recipe });
   });
 });
 
@@ -15,7 +15,7 @@ router.get("/new", (req, res) => {
 });
 
 
-//Create new item based on model
+//Create new recipe based on model
 router.post("/", (req, res) => {
   Recipe.create({
     title: req.body.title,
@@ -28,13 +28,11 @@ router.post("/", (req, res) => {
 
 
 //send user to specific page to edit item
-router
-  .get("/edit/:id", (req, res) => {
-    Recipe.findOne({ _id: req.params.id });
-  })
-  .then(recipe => {
-    res.render("recipes/edit", recipe);
-  });
+// router.get("/edit/:id", (req, res) => {
+//     Recipe.findOne({ _id: req.params.id })
+//   }).then(recipe => {
+//     res.render("recipes/edit", recipe);
+//   });
 
 
 //update specific item by ID

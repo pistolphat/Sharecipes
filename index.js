@@ -14,8 +14,8 @@ app.use(methodOverride("_method"));
 
 
 app.get('/', (req,res) => {
-  recipeModels.find({}).then(results => {
-    res.render('index', { results })
+  recipeModels.find({}).then(recipe => {
+    res.render('index', { recipe })
   })
 })
 
