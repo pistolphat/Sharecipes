@@ -1,0 +1,30 @@
+<section class="form-container">
+  <h4>New Recipe</h4>
+  <form action="/recipes" method="POST" class="tweet-form">
+    <p>
+      <label for="name">Recipe Name</label>
+      <input type="text" name="name">
+    </p>
+
+    <div class="input-field">
+      <textarea name="ingredients" cols="70" rows="30" placeholder="Ingredients"></textarea>
+    </div>
+
+    <div class="input-field">
+      <textarea name="instructions" cols="70" rows="30" placeholder="Instructions"></textarea>
+    </div>
+
+    <div class="input-field">
+      <input type="submit" value="Submit" class="btn">
+    </div>
+  </form>
+</section>
+
+{{!-- <div class="">
+  <select name="author" id="author">
+    <option value="" disabled selected>Choose the User</option>
+    {{#each users}}
+    <option value="{{id}}">{{local.email}}</option>
+    {{/each}}
+  </select>
+</div> --}}
