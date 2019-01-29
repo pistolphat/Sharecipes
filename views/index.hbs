@@ -1,19 +1,26 @@
-{{#each recipe}}
-<div class="row">
-  <div class="col s6 offset-s3">
-    <div class="card grey darken-3">
-      <div class="card-content white-text">
-        {{!-- <span class="card-title"> <a href='/recipes/{{this.id}}'>{{this.name}}</a></span> --}}
-        <p>
-          {{ title }} <br>
-          {{ ingredients }}<br>
-          {{ instructions }}
-        </p>
-      </div>
+<ul class="tweets">
+  {{#each recipe}}
+  <div class="card">
+    <div class="card-content">
+      <a class="card-title" href="/recipes/{{id}}">
+        <strong>Name: </strong>{{ title }} <br>
+        <strong>Ingredients: </strong>{{ ingredients }} <br>
+        <strong>Instructions: </strong>{{ instructions }} <br>
+      </a>
+    </div>
+  </div>
+  {{/each}}
+</ul>
+
+{{!-- {{#each recipe}}
+<div class="card">
+  <div class="card grey darken-3">
+    <div class="card-content white-text">
+      <a class="card-title" href="/recipes/{{id}}"></a>
+      Title: {{ title }} <br>
+      Ingredients: {{ ingredients }} <br>
+      Instructions: {{ instructions }} <br>
     </div>
   </div>
 </div>
-
-{{/each}}
-
-{{!-- <h1>Hello, try this</h1> --}}
+{{/each}} --}}

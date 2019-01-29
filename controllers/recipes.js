@@ -29,8 +29,7 @@ router.post("/", (req, res) => {
 
 //send user to specific page to edit item
 // router.get("/edit/:id", (req, res) => {
-//     Recipe.findOne({ _id: req.params.id })
-//   }).then(recipe => {
+//     Recipe.findOne({ _id: req.params.id }).then(recipe => {
 //     res.render("recipes/edit", recipe);
 //   });
 
