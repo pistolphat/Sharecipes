@@ -49,8 +49,8 @@ router.put("/:id", (req, res) => {
 //   });
 // });
 
-//delete to be added
-// router.delete("/:id", (req, res) => {
+// delete to be added
+// router.delete("/recipes/:id", (req, res) => {
 //   Recipe.findOneAndRemove({ _id: req.params.id }).then(recipe => {
 //     res.redirect("/");
 //   });
