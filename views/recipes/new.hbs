@@ -1,25 +1,25 @@
 <section class="form-container">
-  <h4>New Recipe</h4>
+  <h4>Add a new recipe</h4>
+  <br>
   <form action="/recipes" method="POST">
 
-    <div class="input-field col s6">
-      <h6>Name</h6>
-        <input type="text" name="title">
+    <div>
+      <label class="headings" for="name">Name of Recipe:</label>
+      <input type="text" name="title">
+    </div>
+
+    <div>
+      <label class="headings" for="ingredients">Ingredients:</label>
+      <input type="text" name="ingredients">
+    </div>
+
+    <div>
+      <label class="headings" for="instructions">Instructions:</label>
+      <input type="text" name="instructions">
     </div>
 
     <div class="input-field">
-      <h6>Ingredients</h6>
-      <textarea name="ingredients" cols="20" rows="50" placeholder=""></textarea>
-    </div>
-
-    <div class="input-field">
-      <h6>Instructions</h6>
-      <textarea name="instructions" cols="20" rows="50" placeholder=""></textarea>
-    </div>
-
-
-    <div class="input-field">
-      <input type="submit" value="Submit" class="btn">
+      <input type="submit" value="Submit" class="btn #2196f3 blue">
     </div>
   </form>
 </section>

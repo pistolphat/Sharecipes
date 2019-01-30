@@ -1,9 +1,9 @@
 {{#if recipe}}
-<ul class="collection">
+<ul>
   {{#each recipe}}
-  <div class="card">
-    <div class="card-content">
-      <a class="card-title" href="/recipes/{{id}}">
+  <div class="collection">
+    <div class="collection-item">
+      <a href="/recipes/{{id}}">
         <strong>Name:</strong> {{ title }} <br>
         {{!-- {{!-- <strong>Ingredients: </strong>{{ ingredients }} <br> -- Omit to keep homepage clean}}
         {{!-- <strong>Instructions: </strong>{{ instructions }} <br> -- Omit to keep homepage clean}} --}}

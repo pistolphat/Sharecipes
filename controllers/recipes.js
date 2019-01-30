@@ -14,14 +14,14 @@ router.get("/new", (req, res) => {
   res.render("recipes/new");
 });
 
-//Create new recipe based on model
+//Create new recipe based on model - from homepage
 router.post("/", (req, res) => {
   Recipe.create({
     title: req.body.title,
     ingredients: req.body.ingredients,
     instructions: req.body.instructions
   }).then(recipe => {
-    res.redirect("/recipes");
+    res.redirect("/");
   });
 });
 
