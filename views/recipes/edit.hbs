@@ -1,7 +1,6 @@
 <section class="form-container">
   <h4>Update Recipe</h4>
   <form action="/recipes/{{ id }}?_method=PUT" method="POST">
-
     <div>
       <label for="name">Name of Recipe: </label>
       <input type="text" value="{{title}}" name="title">
@@ -16,8 +15,9 @@
       <label for="instructions">Instructions: </label>
       <input type="text" value="{{instructions}}" name='instructions'>
     </div>
-
-    <input type="submit" value="Update" class="btn">
+    
+    <input type="submit" value="Update" class="btn #2196f3 blue">
+    <input type="submit" value="Delete" class="btn red">
 
   </form>
 </section>
