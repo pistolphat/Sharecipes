@@ -32,26 +32,26 @@ router.get("/:id", (req, res) => {
   });
 });
 
-// //update specific item by ID
+//Update specific item by ID
 router.put("/:id", (req, res) => {
   Recipe.findOneAndUpdate({ _id: req.params.id }, req.body).then(recipe => {
     res.redirect("/");
   });
 });
 
-// delete
-// router.delete("recipes/:id", (req, res) => {
-//   Recipe.findOneAndRemove({ _id: req.params.id }).then(() => {
-//     res.redirect("/");
-//   });
-// });
-
-module.exports = router;
-
 
 //send user to specific page to edit item
 // router.get("/recipes/:id", (req, res) => {
-//   Recipe.findOne({ _id: req.params.id }).then(recipe => {
-//     res.render("recipes/edit", recipe);
+//   Recipe.findOne({ _id: req.params.id }).then(() => {
+//     res.render("/recipes");
 //   });
 // });
+
+// Delete
+router.delete("/:id", (req, res) => {
+  Recipe.findOneAndDelete({ _id: req.params.id }).then(() => {
+    res.redirect("/");
+  })
+});
+
+module.exports = router;
