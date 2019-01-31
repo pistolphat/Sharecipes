@@ -6,7 +6,7 @@
       <label class="headings" for="name">Name of Recipe: </label>
       <input type="text" value="{{title}}" name="title">
     </div>
-
+    
     <div>
       <label class="headings" for="ingredients">Ingredients: </label>
       <input type="text" value="{{ingredients}}" name='ingredients'>
@@ -18,13 +18,12 @@
     </div>
 
     <input type="submit" value="Update" class="btn #2196f3 blue">
-    {{!-- <input type="submit" value="Delete" class="btn red"> --}}
   </form>
 </section>
 <br>
 <div>
   <form action="/recipes/{{ id }}?_method=DELETE" method="POST">
-    <input type="submit" value="DELETE" class="btn red">
+    <input type="submit" value="DELETE" class="btn-large red accent-4">
   </form>
 </div>
 

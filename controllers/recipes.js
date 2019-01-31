@@ -9,12 +9,12 @@ router.get("/", (req, res) => {
   });
 });
 
-//Clicked to add new item - take to new page
+// Clicked to add new item - take to new page
 router.get("/new", (req, res) => {
   res.render("recipes/new");
 });
 
-//Create new recipe based on model - from homepage
+// Create new recipe based on model - from homepage
 router.post("/", (req, res) => {
   Recipe.create({
     title: req.body.title,
@@ -25,27 +25,19 @@ router.post("/", (req, res) => {
   });
 });
 
-//Click to show and redirect to /:id
+// Click to show and redirect to /:id
 router.get("/:id", (req, res) => {
   Recipe.findOne({ _id: req.params.id }).then(recipe => {
     res.render("recipes/edit", recipe);
   });
 });
 
-//Update specific item by ID
+// Update specific item by ID
 router.put("/:id", (req, res) => {
   Recipe.findOneAndUpdate({ _id: req.params.id }, req.body).then(recipe => {
     res.redirect("/");
   });
 });
-
-
-//send user to specific page to edit item
-// router.get("/recipes/:id", (req, res) => {
-//   Recipe.findOne({ _id: req.params.id }).then(() => {
-//     res.render("/recipes");
-//   });
-// });
 
 // Delete
 router.delete("/:id", (req, res) => {
@@ -53,5 +45,12 @@ router.delete("/:id", (req, res) => {
     res.redirect("/");
   })
 });
+
+//send user to specific page to edit item
+// router.get("/recipes/:id", (req, res) => {
+//   Recipe.findOne({ _id: req.params.id }).then(() => {
+//     res.render("/recipes");
+//   });
+// });
 
 module.exports = router;
