@@ -1,38 +1,38 @@
 <section class="form-container">
   <h4>Edit Recipe</h4>
-  <br>
   <form action="/recipes/{{ id }}?_method=PUT" method="POST">
     <div>
       <label class="headings" for="name">Name of Recipe: </label>
       <input type="text" value="{{title}}" name="title">
     </div>
-    
+
     <div>
       <label class="headings" for="ingredients">Ingredients: </label>
-      <input type="text" value="{{ingredients}}" name='ingredients'>
+      <textarea name="ingredients" class="materialize-textarea">{{ingredients}}</textarea>
     </div>
 
     <div>
-      <label class="headings" for="instructions">Instructions: </label>
-      <input type="text" value="{{instructions}}" name='instructions'>
+      <label class="headings" for="ingredients">Instructions: </label>
+      <textarea name="instructions" class="materialize-textarea">{{instructions}}</textarea>
     </div>
 
     <input type="submit" value="Update" class="btn #2196f3 blue">
   </form>
 </section>
 <br>
+
 <div>
   <form action="/recipes/{{ id }}?_method=DELETE" method="POST">
     <input type="submit" value="DELETE" class="btn-large red accent-4">
   </form>
 </div>
 
-{{!-- <div class="input-field">
-  <h6>Instructions</h6>
-  <textarea name="instructions"></textarea>
+{{!-- <div>
+  <label class="headings" for="ingredients">Ingredients: </label>
+  <input type="text" value="{{ingredients}}" name='ingredients'>
 </div> --}}
 
-{{!-- <div class="input-field">
-  <h6>Name</h6>
-  <input type="text" name="title">
+{{!-- <div>
+  <label class="headings" for="instructions">Instructions: </label>
+  <input type="text" value="{{instructions}}" name='instructions'>
 </div> --}}
