@@ -14,9 +14,7 @@ const Recipe = new Schema({
 // const Recipe = mongoose.model('Recipe', Recipe)
 
 //export the model
-module.exports = mongoose.model('Recipe', Recipe)
-
-// const Recipe = mongoose.model('Recipe', Recipe)
+module.exports = mongoose.model('Recipe', Recipe);
 
 // builds a model from the schema, and attaches it to our mongoose instance.
 // a model is used to query and change data in the database
@@ -25,5 +23,3 @@ module.exports = mongoose.model('Recipe', Recipe)
 //   Recipes: mongoose.model("Recipes", Recipes),
 //   Comments: mongoose.model("Comments", Comments)
 // };
-  //
-    
