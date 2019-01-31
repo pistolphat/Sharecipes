@@ -5,8 +5,6 @@
     <div class="collection-item">
       <a class='black-text' href="/recipes/{{id}}">
         <strong>Recipe:</strong> {{ title }}
-        {{!-- {{!-- <strong>Ingredients: </strong>{{ ingredients }} <br> -- Omit to keep homepage clean}}
-        {{!-- <strong>Instructions: </strong>{{ instructions }} <br> -- Omit to keep homepage clean}} --}}
       </a>
     </div>
   </div>
@@ -14,6 +12,16 @@
 </ul>
 {{/if}}
 
+
+{{!-- {{#each recipe}}
+<div class="collection">
+  <div class="collection-item">
+    <a class='black-text' href="/recipes/{{id}}">
+      {{ content }}
+    </a>
+  </div>
+</div>
+{{/each}} --}}
 
 {{!-- {{#each recipe}}
 <div class="card">
@@ -27,3 +35,6 @@
   </div>
 </div>
 {{/each}} --}}
+
+{{!-- {{!-- <strong>Ingredients: </strong>{{ ingredients }} <br> -- Omit to keep homepage clean}}
+{{!-- <strong>Instructions: </strong>{{ instructions }} <br> -- Omit to keep homepage clean}} --}}

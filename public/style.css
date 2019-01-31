@@ -17,3 +17,14 @@ font-size: 45px;
 font-weight: bold;
 margin-left: 15px;
 }
+
+#newrecipe {
+  color: white;
+  background-color: #ff3d00;
+  /* display: inline-block; */
+  border-radius: 5px;
+}
+
+h4 {
+  text-align: center;
+}
