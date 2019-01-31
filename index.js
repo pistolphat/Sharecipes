@@ -6,9 +6,6 @@ const recipeController = require("./controllers/recipes");
 const recipeModels = require("./models/Recipes");
 const app = express();
 
-// const commentController = require("./controllers/comments");
-// const commentModels = require("./models/Comments");
-
 app.set("view engine", "hbs");
 app.use(express.static("public"));
 
@@ -23,16 +20,7 @@ app.get("/", (req, res) => {
   });
 });
 
-// app.get("/", (req, res) => {
-//   commentModels.find({}).then(comment => {
-//     res.render("index", { comment });
-//   });
-// });
-
-
-// app.use('/recipes', commentController)
 app.use("/recipes", recipeController);
-
 
 app.set('port', process.env.PORT || 3001)
 
@@ -40,6 +28,18 @@ app.set('port', process.env.PORT || 3001)
     console.log(`✅ PORT: ${app.get('port')} 🌟`)
   })
 
+
 // app.listen(3000, () => {
 //   console.log("Server running on Port 3000");
 // });
+
+// app.get("/", (req, res) => {
+//   commentModels.find({}).then(comment => {
+//     res.render("index", { comment });
+//   });
+// });
+
+// app.use('/recipes', commentController)
+
+// const commentController = require("./controllers/comments");
+// const commentModels = require("./models/Comments");

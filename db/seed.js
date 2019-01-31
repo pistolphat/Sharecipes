@@ -1,4 +1,4 @@
-const Recipe = require('../models/Recipes')
+const Recipe = require('../models/recipes')
 const seedData = require('./seedData.json')
 
 // const Comment = require('../models/Comments')
