@@ -31,8 +31,10 @@ As a public forum, people are able to view and comment/suggest on each recipe.
  
 ## Process
 
-1. Develop 2 Non-User models and User model (sign up/sign in). Create seed.data to visually see the content as necessary.
-  -- Using Mongoose, MongoDB as links.
+1. Develop 2 Non-User models and User model (sign up/sign in). 
+Create seed.data to visually see the content as necessary.
+Using Mongoose, MongoDB as links.
+
 2. Develop Routes to direct the actions and methods (CRUD).
 3. Develop Controllers (CRUD).
 4. Develop Views via hbs & Materialize.
