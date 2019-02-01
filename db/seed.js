@@ -1,4 +1,4 @@
-const Recipe = require('../models/recipes')
+const Recipe = require('../models/Recipes')
 const seedData = require('./seedData.json')
 
 // const Comment = require('../models/Comments')
@@ -9,13 +9,3 @@ Recipe.remove({}).then(() => {
 }).then(() => {
   process.exit()
 })
-
-// Comment.remove({}).then(() => {
-//   return Comment.collection.insert(seedComment)
-// }).then(() => {
-// process.exit()
-// })
-
-//Seed data to test - pull from GAphy lab
-// const mongoose = require('mongoose')
-// mongoose.Promise = Promise

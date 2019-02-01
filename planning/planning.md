@@ -1,6 +1,7 @@
 ## Objective
 
 The purpose of the application is to enable a User to create and share their favorite recipes.
+
 As a public forum, people are able to view and comment/suggest on each recipe.
 
 

@@ -46,11 +46,11 @@ router.delete("/:id", (req, res) => {
   })
 });
 
+module.exports = router;
+
 //send user to specific page to edit item
 // router.get("/recipes/:id", (req, res) => {
 //   Recipe.findOne({ _id: req.params.id }).then(() => {
 //     res.render("/recipes");
 //   });
 // });
-
-module.exports = router;
