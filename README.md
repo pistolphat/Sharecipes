@@ -2,7 +2,7 @@
 
 Sharecipes is an application that enable a User to create and share their favorite recipes. With future implementation,the User are able to upload a picture showing the final product.
 
-![](planning/Homepage.png)
+![](public/images/SharecipesSS.png)
 
 ### Depolyed website - https://sharecipes.herokuapp.com/
 
